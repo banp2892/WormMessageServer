@@ -1,11 +1,11 @@
-#include "TcpServer.h"
+п»ї#include "TcpServer.h"
 #include <iostream>
 
 TcpServer::TcpServer(int port)
     : serverPort(port), listenSock(INVALID_SOCKET), clientSock(INVALID_SOCKET), running(false) {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
-        throw std::runtime_error("Ошибка инициализации Winsock");
+        throw std::runtime_error("РћС€РёР±РєР° РёРЅРёС†РёР°Р»РёР·Р°С†РёРё Winsock");
     }
 }
 
@@ -17,7 +17,7 @@ TcpServer::~TcpServer() {
 bool TcpServer::start() {
     listenSock = socket(AF_INET, SOCK_STREAM, 0);
     if (listenSock == INVALID_SOCKET) {
-        std::cerr << "Ошибка создания сокета\n";
+        std::cerr << "РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ СЃРѕРєРµС‚Р°\n";
         return false;
     }
 
@@ -27,27 +27,27 @@ bool TcpServer::start() {
     serverAddr.sin_addr.s_addr = INADDR_ANY;
 
     if (bind(listenSock, (sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
-        std::cerr << "Ошибка привязки порта\n";
+        std::cerr << "РћС€РёР±РєР° РїСЂРёРІСЏР·РєРё РїРѕСЂС‚Р°\n";
         closesocket(listenSock);
         return false;
     }
 
     if (listen(listenSock, SOMAXCONN) == SOCKET_ERROR) {
-        std::cerr << "Ошибка при прослушивании\n";
+        std::cerr << "РћС€РёР±РєР° РїСЂРё РїСЂРѕСЃР»СѓС€РёРІР°РЅРёРё\n";
         closesocket(listenSock);
         return false;
     }
 
-    std::cout << "Ожидание подключения клиента...\n";
+    std::cout << "РћР¶РёРґР°РЅРёРµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ РєР»РёРµРЅС‚Р°...\n";
     clientSock = accept(listenSock, nullptr, nullptr);
     if (clientSock == INVALID_SOCKET) {
-        std::cerr << "Ошибка принятия подключения\n";
+        std::cerr << "РћС€РёР±РєР° РїСЂРёРЅСЏС‚РёСЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ\n";
         closesocket(listenSock);
         return false;
     }
 
     running = true;
-    std::cout << "Клиент подключен!\n";
+    std::cout << "РљР»РёРµРЅС‚ РїРѕРґРєР»СЋС‡РµРЅ!\n";
     return true;
 }
 

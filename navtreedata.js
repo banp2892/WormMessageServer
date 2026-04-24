@@ -24,12 +24,35 @@
 */
 var NAVTREE =
 [
-  [ "WormMessageServer", "index.html", ]
+  [ "WormMessageServer", "index.html", [
+    [ "WormMessageServer", "md_README.html", [
+      [ "Что это?", "md_README.html#autotoc_md1", null ],
+      [ "Как это работает?", "md_README.html#autotoc_md2", null ],
+      [ "Как установить?", "md_README.html#autotoc_md3", null ],
+      [ "Пример использования", "md_README.html#autotoc_md4", null ]
+    ] ],
+    [ "Классы", "annotated.html", [
+      [ "Классы", "annotated.html", "annotated_dup" ],
+      [ "Алфавитный указатель классов", "classes.html", null ],
+      [ "Члены классов", "functions.html", [
+        [ "Указатель", "functions.html", null ],
+        [ "Функции", "functions_func.html", null ],
+        [ "Переменные", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Файлы", "files.html", [
+      [ "Файлы", "files.html", "files_dup" ],
+      [ "Список членов всех файлов", "globals.html", [
+        [ "Указатель", "globals.html", null ],
+        [ "Функции", "globals_func.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"TcpServer_8cpp.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

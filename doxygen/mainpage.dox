@@ -1,8 +1,9 @@
 /**
  * \mainpage WormMessageServer
- * * \section intro_sec Описание проекта
- * * \verbinclude README.md
- * * \section links_sec Полезные ссылки
- * - \ref annotated "Список классов"
- * - \ref files "Файлы проекта"
+ * * Данный проект представляет собой сервер сообщений на C++.
+ * Подробное описание функционала, инструкции по сборке и примеры использования 
+ * доступны в разделе \ref md_README "README".
+ * * \section quick_links Быстрая навигация:
+ * - \ref annotated "Список всех классов"
+ * - \ref files "Файлы исходного кода"
  */

@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "WormMessageServer", "index.html", [
-    [ "Быстрая навигация:", "index.html#quick_links", null ],
     [ "WormMessageServer", "md_README.html", [
       [ "Что это?", "md_README.html#autotoc_md1", null ],
       [ "Как это работает?", "md_README.html#autotoc_md2", null ],

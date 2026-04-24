@@ -1,4 +1,9 @@
-﻿#include "TcpServer.h"
+﻿/**
+ * @file TcpServer.cpp
+ * @brief Реализация методов класса TcpServer.
+ */
+
+#include "TcpServer.h"
 #include <iostream>
 
 TcpServer::TcpServer(int port)

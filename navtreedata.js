@@ -25,12 +25,8 @@
 var NAVTREE =
 [
   [ "WormMessageServer", "index.html", [
-    [ "WormMessageServer", "md_README.html", [
-      [ "Что это?", "md_README.html#autotoc_md1", null ],
-      [ "Как это работает?", "md_README.html#autotoc_md2", null ],
-      [ "Как установить?", "md_README.html#autotoc_md3", null ],
-      [ "Пример использования", "md_README.html#autotoc_md4", null ]
-    ] ],
+    [ "WormMessageServer */", "index.html", "index" ],
+    [ "README", "md_README.html", null ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],

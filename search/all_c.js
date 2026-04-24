@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['установить_0',['Как установить?',['../md_README.html#autotoc_md3',1,'']]]
+  ['работает_0',['Как это работает?',['../md_README.html#autotoc_md2',1,'']]]
 ];

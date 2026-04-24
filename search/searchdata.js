@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "clmrstw~икпручэ",
+  0: "clmrstw~икопрсучэ",
   1: "t",
   2: "mrt",
   3: "mrst~",

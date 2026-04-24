@@ -1,0 +1,8 @@
+/**
+ * \mainpage WormMessageServer
+ * * \section intro_sec Описание проекта
+ * * \verbinclude README.md
+ * * \section links_sec Полезные ссылки
+ * - \ref annotated "Список классов"
+ * - \ref files "Файлы проекта"
+ */

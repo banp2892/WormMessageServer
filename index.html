@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WormMessageServer: WormMessageServer */</title>
+<title>WormMessageServer: Титульная страница</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,33 +88,10 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">WormMessageServer */ </div></div>
+<div class="header">
+  <div class="headertitle"><div class="title">WormMessageServer Документация</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
-WormMessageServer</h1>
-<h2><a class="anchor" id="autotoc_md1"></a>
-Что это?</h2>
-<p>TCP-сервер на C++ для Windows для приема данных от червя. Используется библиотека ws2_32.lib </p>
-<h2><a class="anchor" id="autotoc_md2"></a>
-Как это работает?</h2>
-<ol type="1">
-<li><b>Подготовка:</b> Сервер инициализирует Winsock и биндится (bind) на указанный порт (например, <code>8080</code>).</li>
-<li><b>Ожидание:</b> При вызове <code>start()</code> сервер переходит в режим <code>listen</code> и блокируется до появления клиента (<code>accept</code>).</li>
-<li><b>Прием данных:</b> После подключения сервер считывает данные из буфера и выводит их в консоль.</li>
-</ol>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Как установить?</h2>
-<div class="fragment"><div class="line">mkdir build</div>
-<div class="line">cd build</div>
-<div class="line">cmake ..</div>
-<div class="line">cmake --build . --config Release</div>
-</div><!-- fragment --><p> Готовый .exe появится в <em>build/Release</em></p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Пример использования</h2>
-<p>```cpp <a class="el" href="classTcpServer.html" title="Класс для создания простого TCP-сервера под Windows.">TcpServer</a> server(8080); if (server.start()) { std::string data = server.receiveData(); std::cout &lt;&lt; "Data: " &lt;&lt; data &lt;&lt; std::endl; } </p>
-</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

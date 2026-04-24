@@ -1,4 +1,3 @@
-/** \mainpage WormMessageServer */
 # WormMessageServer
 ## Что это?
 TCP-сервер на C++ для Windows для приема данных от червя. Используется библиотека ws2_32.lib

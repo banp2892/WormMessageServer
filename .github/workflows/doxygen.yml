@@ -3,7 +3,7 @@ name: Deploy Doxygen to GitHub Pages
 on:
   push:
     branches:
-      - master  # или main, смотря какая у тебя ветка
+      - master
 
 jobs:
   build-docs:
@@ -16,10 +16,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
 
       - name: Run Doxygen
-        run: doxygen Doxyfile
+        run: doxygen doxygen/Doxyfile
 
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html  # Укажи здесь ту папку, которую создает твой Doxyfile
+          publish_dir: ./html
